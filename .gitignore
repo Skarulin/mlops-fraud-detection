@@ -1,0 +1,26 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Данные и модель
+/data/raw
+/models
+
+# DVC
+.dvc/cache
+.dvc/tmp
+
+# IDE
+.idea/
+
+# CSV-файлы
+Data_fraud_mlops.csv
+EOF
